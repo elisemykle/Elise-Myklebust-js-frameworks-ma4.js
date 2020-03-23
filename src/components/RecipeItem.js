@@ -1,2 +1,10 @@
 import React from 'react';
-import RecipeItem from 'RecipeList.js'
+
+export default function RecipeItem(props) {
+    return (
+        <div>
+            <img src={props.thumbnail} alt={props.title}/>
+            <h1>{props.title}</h1>
+        </div>
+    );
+}
